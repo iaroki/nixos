@@ -28,6 +28,7 @@
       gp = "git push";
       gs = "git status";
       gt = "git tag";
+      n = "nnn -edaPp";
       home-switch = "home-manager switch --flake '.#nixstation' --impure";
       nixos-switch = "sudo nixos-rebuild switch --flake '.#nixstation' --impure";
     };
