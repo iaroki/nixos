@@ -24,6 +24,10 @@
       set -g window-status-separator ""
       set -g pane-active-border-style "fg=#DCD7BA"
       set -g pane-border-style "fg=#DCD7BA"
+      bind C-h select-pane -L
+      bind C-j select-pane -D
+      bind C-k select-pane -U
+      bind C-l select-pane -R
       setw -g mode-keys vi
       bind -T copy-mode-vi v send -X begin-selection
       bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "xclip -sel clip -i"
