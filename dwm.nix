@@ -17,8 +17,8 @@
         src = super.fetchFromGitHub {
           owner = "iaroki";
           repo = "st";
-          rev = "35d09cfe777735862da86e2e86e3225b08d7163a";
-          sha256 = "mWpcnJfCt3oRbBc1jfYd9LqALelZZHRqhEO6Bm6UjCQ=";
+          rev = "27abfa56507e2c38bc59d6806297029aa9cf201c";
+          sha256 = "R/uwNz9S6VOJwLCdxIP7NzaBc+x79GPNCnps4bDuYhM=";
         };
         buildInputs = oldAttrs.buildInputs ++  [ super.harfbuzz ];
       });
