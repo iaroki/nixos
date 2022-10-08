@@ -28,6 +28,9 @@
       gp = "git push";
       gs = "git status";
       gt = "git tag";
+      gwl = "git worktree list";
+      gwa = "git worktree add";
+      gwr = "git worktree remove";
       n = "nnn -edaPp";
       home-switch = "home-manager switch --flake '.#nixstation' --impure";
       nixos-switch = "sudo nixos-rebuild switch --flake '.#nixstation' --impure";
