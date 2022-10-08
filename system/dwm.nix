@@ -44,9 +44,6 @@
   };
 
   fonts.fonts = [
-    pkgs.fira-mono
-    pkgs.unifont
-    pkgs.siji
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 
