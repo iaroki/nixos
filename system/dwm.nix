@@ -8,8 +8,8 @@
         src = super.fetchFromGitHub {
           owner = "iaroki";
           repo = "dwm";
-          rev = "0e50976d3be69a6d46e86e10c4dcce3072b1375c";
-          sha256 = "q/uDhvNsIyoDJUV2r/jc4Ks4SzSLHsE1Ir+q0DmzVv0=";
+          rev = "228e3646ce525171c69b4f36e0a712a296ec356d";
+          sha256 = "opS4JbvPPFmPPV3s/bdVNVKj5BFThmni2OMmGVchnAA=";
         };
       });
 
@@ -17,8 +17,8 @@
         src = super.fetchFromGitHub {
           owner = "iaroki";
           repo = "st";
-          rev = "b2f114f095aea9c1c2fb5fdeabb0a7c9f88da9ce";
-          sha256 = "wX6We64V8Ax1MLAfQurbmw74HUHoC0Kwn6CHkXqBKQ8=";
+          rev = "5372bcee1d786b5a4175078dd17b2ac1e05cb9d9";
+          sha256 = "oL5ShdogkvTet/X1CtpGRAdUxdK0YkF2KuATA3r7Vd0=";
         };
         buildInputs = oldAttrs.buildInputs ++  [ super.harfbuzz ];
       });
