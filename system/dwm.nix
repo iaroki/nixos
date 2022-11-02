@@ -36,7 +36,7 @@
 
   environment.systemPackages = with pkgs; [
     xorg.xhost dmenu st dwm slstatus xclip rofi libnotify
-    pulseaudio pavucontrol dunst
+    pulseaudio pavucontrol dunst acpi
   ];
 
   environment.sessionVariables = {
@@ -49,6 +49,9 @@
 
   programs.slock.enable = true;
   programs.nm-applet.enable = true;
+
+  services.acpid.enable = true;
+  hardware.acpilight.enable = true;
 
   sound.enable = true;
   hardware.pulseaudio.enable = true;
