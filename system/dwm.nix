@@ -8,8 +8,8 @@
         src = super.fetchFromGitHub {
           owner = "iaroki";
           repo = "dwm";
-          rev = "228e3646ce525171c69b4f36e0a712a296ec356d";
-          sha256 = "opS4JbvPPFmPPV3s/bdVNVKj5BFThmni2OMmGVchnAA=";
+          rev = "95080de31380b04e64dd6a00f7d09b8605fe6f02";
+          sha256 = "og+izjlksCXWX5sdtAyVT+vQJJtBq12vSYQPYr55W3A=";
         };
       });
 
@@ -27,8 +27,8 @@
         src = super.fetchFromGitHub {
           owner = "iaroki";
           repo = "slstatus";
-          rev = "de91b3f738fcd42f88ad4653c3ac20ab1564961d";
-          sha256 = "00lpdw1d4r1sn4ccw4dr5qw7m7fcv19ma1ajw5jbm6vcpnm9x74f";
+          rev = "a88c75f5f3cc95110c9e7705aebdc244883b98b7";
+          sha256 = "QacX6RITnIWCtBdsQPwysGyxmEfpNa9GsMiiwNBVJkM=";
         };
       });
     })

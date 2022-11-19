@@ -21,8 +21,17 @@
 
         define_keymap(None, {
             K("M-c"): K("C-c"),
-            K("M-v"): K("C-v"),
+            K("M-v"): K("C-v")
         }, "Global Copy/Paste")
+
+        define_keymap(None, {
+            K("M-d"): K("page_down"),
+            K("M-u"): K("page_up"),
+            K("M-h"): K("left"),
+            K("M-j"): K("down"),
+            K("M-k"): K("up"),
+            K("M-l"): K("right")
+        }, "60% Keyboard navigation")
       '';
     };
 
