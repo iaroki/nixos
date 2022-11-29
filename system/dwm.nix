@@ -53,6 +53,17 @@
   services.acpid.enable = true;
   hardware.acpilight.enable = true;
 
+  hardware.trackpoint.enable = true;
+  hardware.trackpoint.emulateWheel = true;
+  services.xserver.libinput.enable = false;
+  services.xserver.libinput.touchpad.tapping = false;
+  services.xserver.libinput.touchpad.naturalScrolling = false;
+  services.xserver.libinput.touchpad.horizontalScrolling = false;
+  services.xserver.libinput.touchpad.disableWhileTyping = true;
+
+  services.fprintd.enable = true;
+  security.pam.services.login.fprintAuth = true;
+
   sound.enable = true;
   hardware.pulseaudio.enable = true;
   hardware.pulseaudio.package = pkgs.pulseaudioFull;
