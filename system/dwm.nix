@@ -8,8 +8,8 @@
         src = super.fetchFromGitHub {
           owner = "iaroki";
           repo = "dwm";
-          rev = "95080de31380b04e64dd6a00f7d09b8605fe6f02";
-          sha256 = "og+izjlksCXWX5sdtAyVT+vQJJtBq12vSYQPYr55W3A=";
+          rev = "817c0f120ef73be2ed3dc6172c4e2bfffa8e8a15";
+          sha256 = "oKl8v5CfN9XhtSGQ8k0GkDnRAdKuSiMXZ0KWggcDV7M=";
         };
       });
 
@@ -52,6 +52,9 @@
 
   services.acpid.enable = true;
   hardware.acpilight.enable = true;
+
+  hardware.logitech.wireless.enable = true;
+  hardware.logitech.wireless.enableGraphical = true;
 
   hardware.trackpoint.enable = true;
   hardware.trackpoint.emulateWheel = true;

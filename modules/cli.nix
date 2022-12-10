@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     git
     lazygit
+    lazydocker
     neovim
     scrot
     mpv
