@@ -3,9 +3,10 @@
 {
   programs.tmux = {
     enable = true;
-    terminal = "xterm-256color";
     secureSocket = false;
     extraConfig = ''
+      set -g default-terminal "tmux-256color"
+      set -ag terminal-overrides ",xterm-256color:RGB"
       set -g status-position bottom
       set -g status-justify centre
       set -g status-style "bg=#1F1F28"
