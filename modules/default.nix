@@ -3,8 +3,8 @@
 {
   imports = [
     ./cli.nix
+    ./desktop.nix
     ./dev.nix
-    ./dwm.nix
     ./firefox.nix
     ./git.nix
     ./gpg.nix

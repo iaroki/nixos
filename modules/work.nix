@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    pomotroid
+    stretchly
     remmina
     terraform
     terraform-docs
