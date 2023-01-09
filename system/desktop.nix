@@ -37,6 +37,7 @@
   environment.systemPackages = with pkgs; [
     xorg.xhost dmenu st dwm slstatus xclip rofi libnotify
     pulseaudio pavucontrol dunst acpi
+    polybar sxhkd bspwm alacritty
   ];
 
   environment.sessionVariables = {
@@ -79,6 +80,9 @@
   services.xserver.xkbVariant = "winkeys";
   services.xserver.xkbOptions = "grp:caps_toggle";
 
+  services.xserver.windowManager.bspwm.enable = true;
+  services.xserver.windowManager.bspwm.configFile = "/home/msytnyk/.config/bspwm/bspwmrc";
+	services.xserver.windowManager.bspwm.sxhkd.configFile= "/home/msytnyk/.config/sxhkd/sxhkdrc";
   services.xserver.windowManager.dwm.enable = true;
   services.xserver.displayManager.defaultSession = "none+dwm";
 

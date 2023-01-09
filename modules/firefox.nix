@@ -13,6 +13,29 @@
       auto-tab-discard
     ];
     profiles.firenix = {
+      id = 0;
+      isDefault = true;
+      settings = {
+          "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+      };
+      userChrome = ''
+        /* hides the native tabs */
+        #TabsToolbar {
+          visibility: collapse;
+        }
+
+        #titlebar {
+          visibility: collapse;
+        }
+
+        #sidebar-header {
+          visibility: collapse !important;
+        }
+      '';
+    };
+    profiles.ozone = {
+      id = 1;
+      isDefault = false;
       settings = {
           "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
       };
