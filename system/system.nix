@@ -2,8 +2,7 @@
 
 {
   imports = [
-    ./dwm.nix
-    ./vmware.nix
+    ./desktop.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -29,12 +28,13 @@
     isNormalUser = true;
     description = "msytnyk";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "docker" "wheel" ];
+    extraGroups = [ "networkmanager" "docker" "wheel" "vboxusers" ];
   };
 
   security.sudo.wheelNeedsPassword = false;
 
   virtualisation.docker.enable = true;
+  virtualisation.virtualbox.host.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
