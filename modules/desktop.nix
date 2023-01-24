@@ -49,7 +49,7 @@
       text = ''
         slstatus &
         xsetroot -solid "black" &
-        sudo xkeysnail ~/.config/xkeysnail/config.py &
+        sudo xkeysnail --watch ~/.config/xkeysnail/config.py &
         #xrandr -s 2880x1674
       '';
     };

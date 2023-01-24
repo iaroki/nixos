@@ -59,11 +59,14 @@
 
   hardware.trackpoint.enable = true;
   hardware.trackpoint.emulateWheel = true;
-  services.xserver.libinput.enable = false;
+  services.xserver.libinput.enable = true;
   services.xserver.libinput.touchpad.tapping = false;
   services.xserver.libinput.touchpad.naturalScrolling = false;
   services.xserver.libinput.touchpad.horizontalScrolling = false;
   services.xserver.libinput.touchpad.disableWhileTyping = true;
+  services.xserver.libinput.mouse.scrollButton = 9;
+  services.xserver.libinput.mouse.scrollMethod = "button";
+  services.xserver.exportConfiguration = true;
 
   services.fprintd.enable = true;
   security.pam.services.login.fprintAuth = true;

@@ -16,6 +16,7 @@
         VI_MODE_SET_CURSOR = true;
       };
     shellAliases = {
+      vim = "nvim";
       ll = "exa -l";
       ls = "exa";
       lg = "lazygit";
