@@ -28,7 +28,7 @@
     n = "nnn -edaPp";
     home-switch = "home-manager switch --flake '.#macmini'";
     nixos-switch = "sudo nixos-rebuild switch --flake '.#macmini'";
-  }
+  };
 
   nixpkgs.config.allowUnfree = true;
 
