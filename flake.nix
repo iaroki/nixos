@@ -27,6 +27,11 @@
         specialArgs.inputs = attrs;
         modules = [ ./systems/macmini ];
       };
+      nixosConfigurations.thinkpad-e15g2 = nixpkgs.lib.nixosSystem {
+        system = "${system}";
+        specialArgs.inputs = attrs;
+        modules = [ ./systems/thinkpad-e15g2 ];
+      };
       homeConfigurations.${hostname} = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs.inputs = attrs;
