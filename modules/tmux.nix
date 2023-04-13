@@ -9,7 +9,7 @@
       set -ag terminal-overrides ",xterm-256color:RGB"
       set -g status-position bottom
       set -g status-justify centre
-      set -g status-style "bg=#1F1F28"
+      set -g status-style "bg=#0a0a0a"
       set -g window-style ""
       set -g window-active-style ""
       set -g status-left " #[fg=orange]#S"
