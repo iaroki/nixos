@@ -3,6 +3,6 @@
 {
   programs.rofi = {
     enable = true;
-    theme = "DarkBlue";
+    theme = "gruvbox-dark-hard";
   };
 }
