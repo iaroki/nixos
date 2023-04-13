@@ -35,5 +35,13 @@
           ./home.nix
         ];
       };
+      homeConfigurations.macmini = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        extraSpecialArgs.inputs = attrs;
+        modules = [
+          nur.nixosModules.nur
+          ./systems/macmini/home.nix
+        ];
+      };
     };
 }
