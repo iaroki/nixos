@@ -22,6 +22,7 @@
     ../common/home-manager/xkeysnail.nix
     ../common/home-manager/zathura.nix
     ../common/home-manager/zsh.nix
+    ./work.nix
   ];
 
   home.shellAliases = {
@@ -29,8 +30,6 @@
     home-switch = "home-manager switch --flake '.#macmini'";
     nixos-switch = "sudo nixos-rebuild switch --flake '.#macmini'";
   };
-
-  nixpkgs.config.allowUnfree = true;
 
   home.stateVersion = "22.05";
 }

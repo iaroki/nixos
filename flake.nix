@@ -27,7 +27,11 @@
         modules = [ ./systems/thinkpad-e15g2 ];
       };
       homeConfigurations.macmini = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+        # inherit pkgs;
+        pkgs = import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
         extraSpecialArgs.inputs = attrs;
         modules = [
           nur.nixosModules.nur
