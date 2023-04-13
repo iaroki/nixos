@@ -24,7 +24,4 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-9.4.4"
-  ];
 }
