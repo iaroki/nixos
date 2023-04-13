@@ -22,6 +22,11 @@
         specialArgs.inputs = attrs;
         modules = [ ./configuration.nix ];
       };
+      nixosConfigurations.macmini = nixpkgs.lib.nixosSystem {
+        system = "${system}";
+        specialArgs.inputs = attrs;
+        modules = [ ./systems/macmini ];
+      };
       homeConfigurations.${hostname} = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs.inputs = attrs;
