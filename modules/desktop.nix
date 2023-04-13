@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    xkeysnail flameshot
+    xkeysnail flameshot feh picom
   ];
 
   home.file.xkeysnail_config = {
