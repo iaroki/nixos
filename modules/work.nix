@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    pomotroid
     remmina
     vagrant
     terraform
