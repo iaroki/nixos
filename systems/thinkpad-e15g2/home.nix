@@ -26,8 +26,8 @@
 
   home.shellAliases = {
     n = "nnn -edaPp";
-    home-switch = "home-manager switch --flake '.#macmini'";
-    nixos-switch = "sudo nixos-rebuild switch --flake '.#macmini'";
+    home-switch = "home-manager switch --flake '.#thinkpad-e15g2'";
+    nixos-switch = "sudo nixos-rebuild switch --flake '.#thinkpad-e15g2'";
   };
 
   nixpkgs.config.allowUnfree = true;
