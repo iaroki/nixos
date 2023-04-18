@@ -27,7 +27,8 @@
     feh
     picom
     vifm
-    ueberzug
+    ueberzug    # terminal image preview
+    uair        # pomodoro timer
     obsidian
   ];
 
