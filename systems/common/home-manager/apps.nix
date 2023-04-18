@@ -26,6 +26,9 @@
     flameshot
     feh
     picom
+    vifm
+    ueberzug
+    obsidian
   ];
 
   programs.fzf = {
