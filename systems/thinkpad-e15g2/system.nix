@@ -6,7 +6,7 @@
     vim wget tmux git htop tree unzip home-manager
   ];
 
-  networking.hostName = "nixmini";
+  networking.hostName = "nixpad";
   networking.networkmanager.enable = true;
 
   i18n.defaultLocale = "en_US.UTF-8";
