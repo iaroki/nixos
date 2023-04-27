@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
     remmina
-    vagrant
+    # vagrant  # broken
     terraform
     terraform-docs
     terraform-ls
