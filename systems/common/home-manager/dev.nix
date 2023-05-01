@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     remmina
     # vagrant  # broken
+    packer
     terraform
     terraform-docs
     terraform-ls
