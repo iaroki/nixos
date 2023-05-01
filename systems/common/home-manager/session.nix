@@ -10,6 +10,5 @@
     MANPAGER = "less -FirSwX";
     PATH = "/home/$USER/.npm-packages/bin:$PATH";
     NODE_PATH = "/home/$USER/.npm-packages/lib/node_modules";
-    GTK_THEME = "Adwaita:dark";
   };
 }

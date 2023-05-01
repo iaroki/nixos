@@ -6,10 +6,11 @@
     xorg.xhost xclip rofi libnotify
     pulseaudio pavucontrol acpi
     alacritty
+    lxappearance plata-theme vimix-icon-theme
   ];
 
   environment.sessionVariables = {
-    GTK_THEME = "Adwaita:dark";
+    GTK_THEME = "Plata-Noir-Compact";
   };
 
   fonts.fonts = [
