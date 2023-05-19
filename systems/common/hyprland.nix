@@ -3,9 +3,13 @@
 {
 
   environment.systemPackages = with pkgs; [
-    rofi-wayland waybar
+    pciutils usbutils dunst networkmanagerapplet
+    rofi-wayland waybar tofi grim slurp wl-clipboard waylock swaylock-effects
+    hyprpaper hyprpicker keyd psmisc
   ];
 
   programs.hyprland.enable = true;
+  security.pam.services.swaylock = {};
+  security.pam.services.waylock = {};
 
 }

@@ -25,7 +25,7 @@
     isNormalUser = true;
     description = "msytnyk";
     shell = pkgs.zsh;
-    extraGroups = [ "networkmanager" "docker" "wheel" ];
+    extraGroups = [ "input" "video" "networkmanager" "docker" "wheel" ];
   };
 
   security.sudo.wheelNeedsPassword = false;
@@ -52,8 +52,17 @@
 
 #  services.xserver.videoDrivers = [ "displaylink" "modesetting" ];
 
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;
+  # sound.enable = true;
+  # hardware.pulseaudio.enable = true;
+
+# rtkit is optional but recommended
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
 
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;

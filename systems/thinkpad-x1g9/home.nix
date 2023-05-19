@@ -22,6 +22,7 @@
     ../common/home-manager/xkeysnail.nix
     ../common/home-manager/zathura.nix
     ../common/home-manager/zsh.nix
+    ./work.nix
   ];
 
   home.shellAliases = {

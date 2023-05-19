@@ -3,7 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
-    xorg.xhost xclip rofi libnotify
+    xorg.xhost xclip libnotify
     pulseaudio pavucontrol acpi
     alacritty
     lxappearance plata-theme vimix-icon-theme
