@@ -25,13 +25,13 @@
     isNormalUser = true;
     description = "msytnyk";
     shell = pkgs.zsh;
-    extraGroups = [ "input" "video" "networkmanager" "docker" "wheel" ];
+    extraGroups = [ "input" "video" "networkmanager" "docker" "wheel" "vboxusers" ];
   };
 
   security.sudo.wheelNeedsPassword = false;
 
   virtualisation.docker.enable = true;
-#  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enable = true;
 
   services.acpid.enable = true;
   hardware.acpilight.enable = true;
