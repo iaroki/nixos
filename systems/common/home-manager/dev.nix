@@ -13,6 +13,7 @@
     shellcheck
     ansible
     ansible-lint
+    ansible-language-server
     sshpass
     awscli2
     kubectl
