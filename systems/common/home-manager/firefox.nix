@@ -16,6 +16,8 @@
     ];
       settings = {
           "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+          "privacy.webrtc.hideGlobalIndicator" = true;
+          "privacy.webrtc.legacyGlobalIndicator" = false;
       };
       userChrome = ''
         /* hides the native tabs */
@@ -45,6 +47,8 @@
     ];
       settings = {
           "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+          "privacy.webrtc.hideGlobalIndicator" = true;
+          "privacy.webrtc.legacyGlobalIndicator" = false;
       };
       userChrome = ''
         /* hides the native tabs */
@@ -73,6 +77,8 @@
     ];
       settings = {
           "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+          "privacy.webrtc.hideGlobalIndicator" = true;
+          "privacy.webrtc.legacyGlobalIndicator" = false;
       };
       userChrome = ''
         /* hides the native tabs */
@@ -100,6 +106,8 @@
     ];
       settings = {
           "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+          "privacy.webrtc.hideGlobalIndicator" = true;
+          "privacy.webrtc.legacyGlobalIndicator" = false;
       };
       userChrome = ''
         /* hides the native tabs */
