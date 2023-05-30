@@ -32,5 +32,6 @@
     sumneko-lua-language-server
     cmake-language-server
     cmake
+    sops
   ];
 }
