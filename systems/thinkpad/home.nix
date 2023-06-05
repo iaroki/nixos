@@ -27,8 +27,8 @@
 
   home.shellAliases = {
     n = "nnn -edaPp";
-    home-switch = "home-manager switch --flake '.#thinkpad-x1g9'";
-    nixos-switch = "sudo nixos-rebuild switch --flake '.#thinkpad-x1g9'";
+    home-switch = "home-manager switch --flake '.#thinkpad'";
+    nixos-switch = "sudo nixos-rebuild switch --flake '.#thinkpad'";
   };
 
   nixpkgs.config.allowUnfree = true;

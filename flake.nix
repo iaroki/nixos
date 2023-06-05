@@ -26,10 +26,10 @@
         specialArgs.inputs = attrs;
         modules = [ ./systems/thinkpad-e15g2 ];
       };
-      nixosConfigurations.thinkpad-x1g9 = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.thinkpad = nixpkgs.lib.nixosSystem {
         system = "${system}";
         specialArgs.inputs = attrs;
-        modules = [ ./systems/thinkpad-x1g9 ];
+        modules = [ ./systems/thinkpad ];
       };
       nixosConfigurations.vmware = nixpkgs.lib.nixosSystem {
         system = "${system}";
@@ -58,7 +58,7 @@
           ./systems/thinkpad-e15g2/home.nix
         ];
       };
-      homeConfigurations.thinkpad-x1g9 = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.thinkpad = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
@@ -66,7 +66,7 @@
         extraSpecialArgs.inputs = attrs;
         modules = [
           nur.nixosModules.nur
-          ./systems/thinkpad-x1g9/home.nix
+          ./systems/thinkpad/home.nix
         ];
       };
       homeConfigurations.vmware = home-manager.lib.homeManagerConfiguration {
