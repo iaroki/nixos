@@ -4,6 +4,17 @@
 
   environment.systemPackages = with pkgs; [
     vim wget tmux git htop tree unzip home-manager
+    plata-theme vimix-icon-theme pavucontrol acpi
+    libnotify
+  ];
+
+  environment.sessionVariables = {
+    GTK_THEME = "Plata-Noir-Compact";
+    NIXOS_OZONE_WL = "1";
+  };
+
+  fonts.fonts = [
+    (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 
   networking.hostName = "nixpad";
@@ -41,21 +52,7 @@
 
   hardware.trackpoint.enable = true;
   hardware.trackpoint.emulateWheel = true;
-  services.xserver.libinput.enable = true;
-  services.xserver.libinput.touchpad.tapping = false;
-  services.xserver.libinput.touchpad.naturalScrolling = false;
-  services.xserver.libinput.touchpad.horizontalScrolling = false;
-  services.xserver.libinput.touchpad.disableWhileTyping = true;
-  services.xserver.libinput.mouse.scrollButton = 9;
-  services.xserver.libinput.mouse.scrollMethod = "button";
-  services.xserver.exportConfiguration = true;
 
-#  services.xserver.videoDrivers = [ "displaylink" "modesetting" ];
-
-  # sound.enable = true;
-  # hardware.pulseaudio.enable = true;
-
-# rtkit is optional but recommended
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -67,6 +64,33 @@
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 
+  security = {
+    pam = {
+      services = {
+        login.fprintAuth = true;
+        swaylock-effects.fprintAuth = true;
+        sudo.fprintAuth = true;
+        system-local-login.fprintAuth = true;
+        su.fprintAuth = true;
+      };
+    };
+  };
+
+  services = {
+    fprintd = { enable = true; };
+    thermald = { enable = true; };
+  };
+
+  services = {
+    tlp = {
+      enable = true;
+      settings = {
+        TLP_ENABLE = 1;
+        START_CHARGE_THRESH_BAT0 = 75;
+        STOP_CHARGE_THRESH_BAT0 = 80;
+      };
+    };
+  };
   nixpkgs.config.allowUnfree = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
