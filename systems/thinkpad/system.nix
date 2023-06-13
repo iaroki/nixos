@@ -64,20 +64,20 @@
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
 
-  security = {
-    pam = {
-      services = {
-        login.fprintAuth = true;
-        swaylock-effects.fprintAuth = true;
-        sudo.fprintAuth = true;
-        system-local-login.fprintAuth = true;
-        su.fprintAuth = true;
-      };
-    };
-  };
+  # security = {
+  #   pam = {
+  #     services = {
+  #       login.fprintAuth = true;
+  #       swaylock-effects.fprintAuth = true;
+  #       sudo.fprintAuth = true;
+  #       system-local-login.fprintAuth = true;
+  #       su.fprintAuth = true;
+  #     };
+  #   };
+  # };
 
   services = {
-    fprintd = { enable = true; };
+    # fprintd = { enable = true; };
     thermald = { enable = true; };
   };
 
