@@ -9,7 +9,7 @@
       set -ag terminal-overrides ",xterm-256color:RGB"
       set -g status-position bottom
       set -g status-justify centre
-      set -g status-style "bg=#0a0a0a"
+      set -g status-style "bg=#000000"
       set -g window-style ""
       set -g window-active-style ""
       set -g status-left " #[fg=orange]#S"
@@ -21,7 +21,7 @@
       set -g window-status-current-style "bold"
       set -g window-status-style ""
       set -g window-status-format " #[fg=#C8C093][#I]#W#F "
-      set -g window-status-current-format " #[fg=#7E9CD8]#W#F "
+      set -g window-status-current-format " #[fg=#d3869b]#W#F "
       set -g window-status-separator ""
       set -g pane-active-border-style "fg=#DCD7BA"
       set -g pane-border-style "fg=#DCD7BA"
@@ -33,6 +33,7 @@
       bind -T copy-mode-vi v send -X begin-selection
       bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "xclip -sel clip -i"
       bind P paste-buffer
+      bind-key -r f display-popup -E "z"
     '';
   };
 }
