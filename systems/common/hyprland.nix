@@ -15,16 +15,9 @@
     enable = true;
     settings = {
       default_session = {
-        command = "dbus-run-session ${pkgs.cage}/bin/cage -s ${pkgs.greetd.gtkgreet}/bin/gtkgreet";
+        command = "dbus-run-session ${pkgs.greetd.tuigreet}/bin/tuigreet --time --asterisks --cmd Hyprland";
         user = "msytnyk";
       };
     };
   };
-
-  environment.etc = {
-    "greetd/environments".text = ''
-      dbus-run-session Hyprland
-    '';
-  };
-
 }
