@@ -14,6 +14,8 @@
   };
 
   fonts.fonts = [
+    pkgs.source-serif
+    pkgs.source-sans
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 
