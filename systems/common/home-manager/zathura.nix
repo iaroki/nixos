@@ -24,21 +24,21 @@
         index-active-fg         = "#282a36";
 
         inputbar-bg             = "#ffaf00";
-        inputbar-fg             = "#11121D";
-        statusbar-bg            = "#11121D";
+        inputbar-fg             = "#111111";
+        statusbar-bg            = "#111111";
         statusbar-fg            = "#ffffff";
 
         highlight-color         = "#264f78";
         highlight-active-color  = "#dcdcaa";
 
-        default-bg              = "#11121D";
+        default-bg              = "#111111";
         default-fg              = "#DCD7BA";
 
         render-loading          = true;
-        render-loading-fg       = "#11121D";
+        render-loading-fg       = "#111111";
         render-loading-bg       = "#DCD7BA";
 
-        recolor-lightcolor      = "#1F1F28";
+        recolor-lightcolor      = "#111111";
         recolor-darkcolor       = "#DCD7BA";
 
         recolor                 = true;

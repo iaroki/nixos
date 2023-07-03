@@ -15,7 +15,7 @@
       set -g status-left " #[fg=orange]#S"
       set -g status-left-style "bold"
       set -g status-left-length 50
-      set -g status-right "#[fg=#8ec07c]#H "
+      set -g status-right "#[fg=#b8bb26]#H "
       set -g status-right-style "bold"
       set -g status-right-length 25
       set -g window-status-current-style "bold"

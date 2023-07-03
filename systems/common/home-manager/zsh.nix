@@ -32,7 +32,6 @@
       gwl = "git worktree list";
       gwa = "git worktree add";
       gwr = "git worktree remove";
-      n = "nnn -edaPp";
     };
     oh-my-zsh = {
       enable = true;

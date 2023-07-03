@@ -6,7 +6,6 @@
     lazygit
     lazydocker
     neovim
-    scrot
     mpv
     exa
     bat
@@ -23,11 +22,7 @@
     gopls
     gcc
     gnumake
-    flameshot
-    feh
-    picom
     vifm
-    ueberzug    # terminal image preview
     obsidian
   ];
 
