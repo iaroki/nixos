@@ -14,11 +14,9 @@
     ../common/home-manager/git.nix
     ../common/home-manager/gpg.nix
     ../common/home-manager/note-sync.nix
-    ../common/home-manager/rofi.nix
     ../common/home-manager/services.nix
     ../common/home-manager/session.nix
     ../common/home-manager/tmux.nix
-    ../common/home-manager/xkeysnail.nix
     ../common/home-manager/zathura.nix
     ../common/home-manager/zsh.nix
   ];
