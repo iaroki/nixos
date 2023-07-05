@@ -33,7 +33,7 @@
       bind -T copy-mode-vi v send -X begin-selection
       bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "xclip -sel clip -i"
       bind P paste-buffer
-      bind-key -r f display-popup -E "z"
+      bind-key -r f display-popup -b rounded -E "z"
     '';
   };
 }
