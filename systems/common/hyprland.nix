@@ -6,7 +6,7 @@
     pciutils usbutils dunst networkmanagerapplet
     waybar tofi grim slurp wl-clipboard swaylock-effects
     hyprpaper hyprpicker keyd psmisc foot pass-wayland
-    xorg.xprop
+    alacritty xorg.xprop
   ];
 
   programs.hyprland.enable = true;
