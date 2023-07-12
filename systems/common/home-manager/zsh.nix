@@ -6,7 +6,7 @@
     autocd = true;
     enableAutosuggestions = true;
     enableCompletion = true;
-    enableSyntaxHighlighting = true;
+    syntaxHighlighting.enable = true;
     defaultKeymap = "viins";
     initExtra = ''
       bindkey jk vi-cmd-mode
