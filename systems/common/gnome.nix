@@ -2,8 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
-    pciutils usbutils psmisc
-    tofi keyd foot pass-wayland
+    pciutils usbutils psmisc keyd foot pass-wayland
+    gnome.dconf-editor
     gnome.gnome-tweaks gnomeExtensions.appindicator
     gnome.pomodoro gnomeExtensions.disable-workspace-switcher
     gnomeExtensions.workspace-indicator-2 gnomeExtensions.caffeine
