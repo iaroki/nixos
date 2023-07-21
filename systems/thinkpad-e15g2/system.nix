@@ -6,6 +6,16 @@
     vim wget tmux git htop tree unzip home-manager
   ];
 
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+  };
+
+  fonts.fonts = [
+    pkgs.source-serif
+    pkgs.source-sans
+    (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
+  ];
+
   networking.hostName = "nixpad";
   networking.networkmanager.enable = true;
 
@@ -52,8 +62,14 @@
 
   services.xserver.videoDrivers = [ "displaylink" "modesetting" ];
 
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
+  hardware.pulseaudio.enable = false;
 
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;

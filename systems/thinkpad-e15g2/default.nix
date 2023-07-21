@@ -4,6 +4,6 @@
   imports = [
     ./configuration.nix
     ./system.nix
-    ../common/awesome.nix
+    ../common/gnome.nix
   ];
 }
