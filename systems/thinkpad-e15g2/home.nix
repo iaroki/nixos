@@ -19,6 +19,7 @@
     ../common/home-manager/tmux.nix
     ../common/home-manager/zathura.nix
     ../common/home-manager/zsh.nix
+    ../common/home-manager/dconf.nix
   ];
 
   home.shellAliases = {
