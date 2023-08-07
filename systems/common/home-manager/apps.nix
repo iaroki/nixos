@@ -23,6 +23,7 @@
     gcc
     gnumake
     vifm
+    w3m
     obsidian
   ];
 
