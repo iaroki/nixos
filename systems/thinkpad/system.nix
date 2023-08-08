@@ -13,7 +13,7 @@
     NIXOS_OZONE_WL = "1";
   };
 
-  fonts.fonts = [
+  fonts.packages = [
     pkgs.source-serif
     pkgs.source-sans
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
