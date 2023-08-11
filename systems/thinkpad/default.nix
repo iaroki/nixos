@@ -4,6 +4,6 @@
   imports = [
     ./configuration.nix
     ./system.nix
-    ../common/hyprland.nix
+    ../common/gnome.nix
   ];
 }

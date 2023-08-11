@@ -4,12 +4,10 @@
 
   environment.systemPackages = with pkgs; [
     vim wget tmux git htop tree unzip home-manager
-    plata-theme vimix-icon-theme pavucontrol acpi
-    libnotify
+    pavucontrol acpi libnotify
   ];
 
   environment.sessionVariables = {
-    GTK_THEME = "Plata-Noir-Compact";
     NIXOS_OZONE_WL = "1";
   };
 
@@ -21,12 +19,6 @@
 
   networking.hostName = "nixpad";
   networking.networkmanager.enable = true;
-
-  i18n.defaultLocale = "en_US.UTF-8";
-  console = {
-    font = "Lat2-Terminus16";
-    keyMap = "us";
-  };
 
   time.timeZone = "Europe/Kiev";
 
@@ -55,6 +47,7 @@
   hardware.trackpoint.enable = true;
   hardware.trackpoint.emulateWheel = true;
 
+  hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -78,17 +71,13 @@
   #   };
   # };
 
-  services = {
-    # fprintd = { enable = true; };
-    thermald = { enable = true; };
-  };
-
+  services.power-profiles-daemon.enable = false;
   services = {
     tlp = {
       enable = true;
       settings = {
         TLP_ENABLE = 1;
-        START_CHARGE_THRESH_BAT0 = 75;
+        START_CHARGE_THRESH_BAT0 = 70;
         STOP_CHARGE_THRESH_BAT0 = 80;
       };
     };
