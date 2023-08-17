@@ -5,5 +5,6 @@
     zoom-us
     ripcord
     google-cloud-sdk
+    rclone
   ];
 }
