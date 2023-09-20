@@ -17,8 +17,8 @@
       };
     shellAliases = {
       vim = "nvim";
-      ll = "exa -l";
-      ls = "exa";
+      ll = "eza -l";
+      ls = "eza";
       lg = "lazygit";
       ga = "git add";
       gc = "git commit";

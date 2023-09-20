@@ -7,7 +7,7 @@
     lazydocker
     neovim
     mpv
-    exa
+    eza
     bat
     glow
     ripgrep
@@ -23,7 +23,6 @@
     gcc
     gnumake
     vifm
-    lf
     w3m
     obsidian
   ];
