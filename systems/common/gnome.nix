@@ -4,12 +4,9 @@
   environment.systemPackages = with pkgs; [
     pciutils usbutils psmisc keyd foot pass-wayland dconf2nix
     gnome.dconf-editor gnome.nautilus gnome.gnome-tweaks gnome.pomodoro
-    gnomeExtensions.unite gnomeExtensions.tiling-assistant
     gnomeExtensions.appindicator gnomeExtensions.disable-workspace-switcher
-    gnomeExtensions.workspace-indicator-2 gnomeExtensions.caffeine
-    gnomeExtensions.date-menu-formatter gnomeExtensions.hide-activities-button
     gnomeExtensions.no-overview gnomeExtensions.clipboard-indicator
-    gnomeExtensions.remove-app-menu libgtop alacritty xorg.xprop
+    alacritty xorg.xprop
   ];
 
   environment.gnome.excludePackages = (with pkgs; [

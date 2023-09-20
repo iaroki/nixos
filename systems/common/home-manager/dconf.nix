@@ -17,7 +17,7 @@ with lib.hm.gvariant;
     "org/gnome/desktop/input-sources" = {
       per-window = true;
       show-all-sources = true;
-      sources = [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "xkb" "ua+winkeys" ]) ];
+      sources = [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "xkb" "ru" ]) (mkTuple [ "xkb" "ua+winkeys" ]) ];
       xkb-options = [ "terminate:ctrl_alt_bksp" "grp:caps_toggle" ];
     };
 
@@ -118,7 +118,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Shift><Alt>Return";
-      command = "footclient";
+      command = "foot";
       name = "terminal";
     };
 
@@ -130,8 +130,8 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       disable-user-extensions = false;
-      disabled-extensions = [ "apps-menu@gnome-shell-extensions.gcampax.github.com" "window-list@gnome-shell-extensions.gcampax.github.com" "workspace-indicator@gnome-shell-extensions.gcampax.github.com" "freon@UshakovVasilii_Github.yahoo.com" ];
-      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "caffeine@patapon.info" "clipboard-indicator@tudmotu.com" "date-menu-formatter@marcinjakubowski.github.com" "disable-workspace-switcher@jbradaric.me" "no-overview@fthx" "pomodoro@arun.codito.in" "System_Monitor@bghome.gmail.com" "horizontal-workspace-indicator@tty2.io" "tophat@fflewddur.github.io" "Hide_Activities@shay.shayel.org" "RemoveAppMenu@Dragon8oy.com" ];
+      disabled-extensions = [];
+      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "clipboard-indicator@tudmotu.com" "disable-workspace-switcher@jbradaric.me" "no-overview@fthx" "pomodoro@arun.codito.in" ];
     };
 
     "org/gnome/shell/app-switcher" = {
@@ -140,19 +140,6 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/appindicator" = {
       tray-pos = "right";
-    };
-
-    "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 1;
-    };
-
-    "org/gnome/shell/extensions/date-menu-formatter" = {
-      font-size = 12;
-      pattern = "    EEEE d  MMMM      H : mm";
-    };
-
-    "org/gnome/shell/extensions/horizontal-workspace-indicator" = {
-      widget-position = "left";
     };
 
     "org/gnome/shell/keybindings" = {
