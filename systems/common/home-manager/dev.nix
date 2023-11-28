@@ -15,13 +15,13 @@
     ansible-lint
     ansible-language-server
     sshpass
-    awscli2
+    awscli
     kubectl
     kubectx
     kubernetes-helm
-    python310
-    python310Packages.pip
-    python310Packages.toggl-cli
+    python311
+    python311Packages.pip
+    python311Packages.toggl-cli
     nodejs
     nodePackages.npm
     nodePackages.pyright
