@@ -6,5 +6,6 @@
     ripcord
     google-cloud-sdk
     rclone
+    cloudflared
   ];
 }
