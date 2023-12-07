@@ -15,7 +15,7 @@
     ansible-lint
     ansible-language-server
     sshpass
-    awscli
+    awscli2
     kubectl
     kubectx
     kubernetes-helm
