@@ -7,5 +7,6 @@
     google-cloud-sdk
     rclone
     cloudflared
+    dbeaver
   ];
 }
