@@ -6,6 +6,7 @@
     gnome.dconf-editor gnome.nautilus gnome.gnome-tweaks gnome.pomodoro
     gnomeExtensions.appindicator gnomeExtensions.disable-workspace-switcher
     gnomeExtensions.no-overview gnomeExtensions.clipboard-indicator
+    gnomeExtensions.blur-my-shell
     alacritty xorg.xprop
   ];
 
