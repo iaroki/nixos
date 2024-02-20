@@ -1,6 +1,11 @@
 { pkgs, ... }:
 
 {
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
   programs.zsh = {
     enable = true;
     autocd = true;
