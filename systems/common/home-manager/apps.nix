@@ -25,7 +25,7 @@
     vifm
     w3m
     obsidian
-    transmission-gtk
+    transmission_4-gtk
     cbonsai
   ];
 
