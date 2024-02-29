@@ -128,6 +128,17 @@ with lib.hm.gvariant;
       workspaces-only-on-primary = false;
     };
 
+    "org/gnome/nautilus/list-view" = {
+      use-tree-view = true;
+    };
+
+    "org/gnome/nautilus/preferences" = {
+      default-folder-viewer = "list-view";
+      migrated-gtk-settings = true;
+      search-filter-time-type = "last_modified";
+      show-delete-permanently = true;
+    };
+
     "org/gnome/pomodoro/plugins/sounds" = {
       pomodoro-end-sound = "bell.ogg";
       pomodoro-end-sound-volume = 1.0;
