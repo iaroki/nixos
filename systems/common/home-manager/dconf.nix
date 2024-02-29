@@ -23,6 +23,15 @@ with lib.hm.gvariant;
       index-single-directories = [];
     };
 
+    "org/gnome/Console" = {
+      font-scale = 1.5000000000000004;
+      last-window-size = mkTuple [ 972 672 ];
+    };
+
+    "org/gnome/GWeather4" = {
+      temperature-unit = "centigrade";
+    };
+
     "org/gnome/desktop/datetime" = {
       automatic-timezone = true;
     };
