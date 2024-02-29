@@ -30,7 +30,7 @@
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [
-    "electron-25.9.0"  # obsidian-1.5.3 workaround
+    # "electron-25.9.0"  # obsidian-1.5.3 workaround
   ];
 
   home.stateVersion = "22.05";
