@@ -48,6 +48,7 @@ with lib.hm.gvariant;
       color-scheme = "prefer-dark";
       cursor-size = 14;
       enable-animations = false;
+      enable-hot-corners = false;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
       gtk-theme = "Adwaita-dark";
@@ -58,6 +59,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/notifications" = {
+      show-banners = false;
       show-in-lock-screen = false;
     };
 
@@ -94,6 +96,8 @@ with lib.hm.gvariant;
       move-to-workspace-7 = [ "<Shift><Alt>7" ];
       move-to-workspace-8 = [ "<Shift><Alt>8" ];
       move-to-workspace-9 = [ "<Shift><Alt>9" ];
+      switch-applications = [];
+      switch-applications-backward = [];
       switch-to-workspace-1 = [ "<Alt>1" ];
       switch-to-workspace-2 = [ "<Alt>2" ];
       switch-to-workspace-3 = [ "<Alt>3" ];
@@ -117,6 +121,7 @@ with lib.hm.gvariant;
 
     "org/gnome/mutter" = {
       attach-modal-dialogs = true;
+      center-new-windows = true;
       dynamic-workspaces = false;
       edge-tiling = true;
       focus-change-on-pointer-rest = true;
