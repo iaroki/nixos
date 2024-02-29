@@ -5,6 +5,19 @@ with lib.hm.gvariant;
 
 {
   dconf.settings = {
+    "org/blueman/general" = {
+      plugin-list = [ "StatusNotifierItem" "!ConnectionNotifier" ];
+      window-properties = [ 706 528 0 0 ];
+    };
+
+    "org/blueman/network" = {
+      nap-enable = false;
+    };
+
+    "org/blueman/plugins/powermanager" = {
+      auto-power-on = false;
+    };
+
     "org/freedesktop/tracker/miner/files" = {
       index-recursive-directories = [];
       index-single-directories = [];
