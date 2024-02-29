@@ -169,7 +169,48 @@ with lib.hm.gvariant;
     "org/gnome/shell" = {
       disable-user-extensions = false;
       disabled-extensions = [];
-      enabled-extensions = [ "appindicatorsupport@rgcjonas.gmail.com" "clipboard-indicator@tudmotu.com" "disable-workspace-switcher@jbradaric.me" "no-overview@fthx" "pomodoro@arun.codito.in" ];
+      enabled-extensions = [
+        "appindicatorsupport@rgcjonas.gmail.com"
+        "clipboard-indicator@tudmotu.com"
+        "disable-workspace-switcher@jbradaric.me"
+        "no-overview@fthx"
+        "pomodoro@arun.codito.in"
+        "blur-my-shell@aunetx"
+      ];
+    };
+
+    "org/gnome/shell/extensions/blur-my-shell" = {
+      brightness = 0.16;
+      hacks-level = 3;
+      sigma = 20;
+    };
+
+    "org/gnome/shell/extensions/blur-my-shell/applications" = {
+      enable-all = false;
+      opacity = 230;
+      whitelist = [ "foot" ];
+    };
+
+    "org/gnome/shell/extensions/blur-my-shell/dash-to-dock" = {
+      blur = false;
+      override-background = true;
+      style-dash-to-dock = 2;
+    };
+
+    "org/gnome/shell/extensions/blur-my-shell/lockscreen" = {
+      blur = false;
+    };
+
+    "org/gnome/shell/extensions/blur-my-shell/overview" = {
+      style-components = 2;
+    };
+
+    "org/gnome/shell/extensions/blur-my-shell/panel" = {
+      blur = true;
+      brightness = 0.25;
+      customize = false;
+      override-background-dynamically = false;
+      sigma = 20;
     };
 
     "org/gnome/shell/app-switcher" = {
@@ -177,10 +218,13 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/appindicator" = {
+      icon-contrast = 0.7;
+      icon-saturation = 0.9999999999999999;
       tray-pos = "right";
     };
 
     "org/gnome/shell/keybindings" = {
+      show-screenshot-ui = [ "<Alt><Super>p" ];
       toggle-application-view = [ "<Alt>r" ];
     };
 
