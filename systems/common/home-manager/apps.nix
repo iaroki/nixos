@@ -27,6 +27,7 @@
     obsidian
     transmission_4-gtk
     cbonsai
+    moonlight-qt
   ];
 
   programs.fzf = {
