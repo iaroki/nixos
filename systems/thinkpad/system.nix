@@ -7,6 +7,25 @@
     pavucontrol acpi libnotify
   ];
 
+  services.keyd = {
+    enable = true;
+    keyboards.default.settings = {
+      main = {
+        leftalt = "layer(customalt)";
+        rightalt = "layer(alt)";
+      };
+      "customalt:A" = {
+        h = "left";
+        l = "right";
+        k = "up";
+        j = "down";
+        c = "C-insert";
+        v = "S-insert";
+        x = "S-delete";
+      };
+    };
+  };
+
   environment.sessionVariables = {
     # NIXOS_OZONE_WL = "1";
     GTK_THEME="Adwaita:dark";
