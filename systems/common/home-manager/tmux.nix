@@ -21,7 +21,7 @@
       set -g window-status-current-style "bold"
       set -g window-status-style ""
       set -g window-status-format " #[fg=#C8C093][#I]#W#F "
-      set -g window-status-current-format " #[fg=#d3869b]#W#F "
+      set -g window-status-current-format " #[fg=#cba6f7]#W#F "
       set -g window-status-separator ""
       set -g pane-active-border-style "fg=#DCD7BA"
       set -g pane-border-style "fg=#DCD7BA"
