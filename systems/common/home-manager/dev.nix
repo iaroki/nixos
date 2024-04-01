@@ -21,7 +21,6 @@
     kubernetes-helm
     python311
     python311Packages.pip
-    python311Packages.toggl-cli
     nodejs
     nodePackages.npm
     nodePackages.pyright
