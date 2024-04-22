@@ -8,5 +8,6 @@
     rclone
     cloudflared
     dbeaver
+    slack
   ];
 }
