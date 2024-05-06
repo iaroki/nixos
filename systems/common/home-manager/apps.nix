@@ -35,9 +35,13 @@
     enable = true;
     enableBashIntegration = true;
     enableZshIntegration = true;
+    defaultOptions = [
+      "--reverse"
+      "--border"
+    ];
     colors = {
       fg = "#cdd6f4";
-      "fg+" = "#cdd6f4";
+      "fg+" = "#f5e0dc";
       hl = "#cba6f7";
       "hl+" = "#cba6f7";
       spinner = "#f5e0dc";
@@ -46,6 +50,7 @@
       pointer = "#f5e0dc";
       marker = "#f5e0dc";
       prompt = "#cba6f7";
+      border = "#cdd6f4";
     };
   };
 }
