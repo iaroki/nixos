@@ -187,7 +187,7 @@ with lib.hm.gvariant;
     "org/gnome/shell/extensions/blur-my-shell/applications" = {
       blur = true;
       brightness = 1.0;
-      dynamic-opacity=false
+      dynamic-opacity = false;
       enable-all = false;
       opacity = 230;
       whitelist = [ "foot" ];
