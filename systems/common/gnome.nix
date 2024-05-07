@@ -4,9 +4,8 @@
   environment.systemPackages = with pkgs; [
     pciutils usbutils psmisc keyd foot pass-wayland dconf2nix
     gnome.dconf-editor gnome.nautilus gnome.gnome-tweaks gnome.pomodoro
-    gnomeExtensions.appindicator gnomeExtensions.disable-workspace-switcher
-    gnomeExtensions.no-overview gnomeExtensions.clipboard-indicator
-    gnomeExtensions.blur-my-shell
+    gnomeExtensions.appindicator gnomeExtensions.clipboard-indicator
+    gnomeExtensions.blur-my-shell gnomeExtensions.just-perfection
     alacritty xorg.xprop
   ];
 
@@ -25,5 +24,5 @@
   services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
-  services.xserver.displayManager.defaultSession = "gnome";
+  services.displayManager.defaultSession = "gnome";
 }

@@ -172,10 +172,9 @@ with lib.hm.gvariant;
       enabled-extensions = [
         "appindicatorsupport@rgcjonas.gmail.com"
         "clipboard-indicator@tudmotu.com"
-        "disable-workspace-switcher@jbradaric.me"
-        "no-overview@fthx"
         "pomodoro@arun.codito.in"
         "blur-my-shell@aunetx"
+        "just-perfection-desktop@just-perfection"
       ];
     };
 
@@ -186,6 +185,9 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/blur-my-shell/applications" = {
+      blur = true;
+      brightness = 1.0;
+      dynamic-opacity=false
       enable-all = false;
       opacity = 230;
       whitelist = [ "foot" ];
@@ -211,6 +213,28 @@ with lib.hm.gvariant;
       customize = false;
       override-background-dynamically = false;
       sigma = 20;
+    };
+
+   "org/gnome/shell/extensions/just-perfection" = {
+      accessibility-menu = true;
+      activities-button = true;
+      animation = 0;
+      clock-menu = true;
+      dash-icon-size = 0;
+      keyboard-layout = true;
+      panel = true;
+      panel-in-overview = true;
+      power-icon = true;
+      ripple-box = true;
+      search = true;
+      show-apps-button = true;
+      startup-status = 0;
+      theme = false;
+      window-demands-attention-focus = false;
+      window-picker-icon = true;
+      workspace = true;
+      workspace-popup = false;
+      workspaces-in-app-grid = true;
     };
 
     "org/gnome/shell/app-switcher" = {
