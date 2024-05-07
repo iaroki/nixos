@@ -12,7 +12,7 @@
       set -g base-index 1
       setw -g pane-base-index 1
       set-option -g renumber-windows on
-      set -g status-position top
+      set -g status-position bottom
       set -g status-justify centre
       set -g status-style "bg=#000000"
       set -g window-style ""
