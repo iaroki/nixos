@@ -29,6 +29,7 @@
     cbonsai
     moonlight-qt
     newsboat
+    distrobox
   ];
 
   programs.fzf = {
