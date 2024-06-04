@@ -4,7 +4,7 @@
 
   environment.systemPackages = with pkgs; [
     vim wget tmux git htop tree unzip home-manager
-    pavucontrol acpi libnotify
+    pavucontrol acpi libnotify thinkfan
   ];
 
   services.keyd = {
@@ -25,6 +25,8 @@
       };
     };
   };
+
+  services.thinkfan.enable = true;
 
   environment.sessionVariables = {
     # NIXOS_OZONE_WL = "1";
