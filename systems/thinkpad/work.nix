@@ -7,6 +7,7 @@
     google-cloud-sdk
     rclone
     cloudflared
+    cloudflare-warp
     dbeaver-bin
     slack
   ];
