@@ -179,40 +179,97 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/blur-my-shell" = {
-      brightness = 0.16;
-      hacks-level = 3;
+      brightness = mkDouble "0.16";
+      hacks-level = 2;
+      pipelines = [
+        (mkDictionaryEntry ["pipeline_default" [
+          (mkDictionaryEntry ["name" (mkVariant "Default")])
+          (mkDictionaryEntry ["effects" (mkVariant [ (mkVariant [
+            (mkDictionaryEntry ["type" (mkVariant "native_static_gaussian_blur")])
+            (mkDictionaryEntry ["id" (mkVariant "effect_000000000000")])
+            (mkDictionaryEntry ["params" (mkVariant [
+              (mkDictionaryEntry ["radius" (mkVariant 30)])
+              (mkDictionaryEntry ["brightness" (mkVariant (mkDouble "0.16"))])
+              (mkDictionaryEntry ["unscaled_radius" (mkVariant 80)])
+            ])])
+          ]) ])])
+        ]])
+        (mkDictionaryEntry ["pipeline_default_rounded" [
+          (mkDictionaryEntry ["name" (mkVariant "Default rounded")])
+          (mkDictionaryEntry ["effects" (mkVariant [ (mkVariant [
+            (mkDictionaryEntry ["type" (mkVariant "native_static_gaussian_blur")])
+            (mkDictionaryEntry ["id" (mkVariant "effect_000000000001")])
+            (mkDictionaryEntry ["params" (mkVariant [
+              (mkDictionaryEntry ["radius" (mkVariant 30)])
+              (mkDictionaryEntry ["brightness" (mkVariant (mkDouble "0.6"))])
+            ])])
+          ]) (mkVariant [
+            (mkDictionaryEntry ["type" (mkVariant "corner")])
+            (mkDictionaryEntry ["id" (mkVariant "effect_000000000002")])
+            (mkDictionaryEntry ["params" (mkVariant [
+              (mkDictionaryEntry ["radius" (mkVariant 24)])
+            ])])
+          ]) ])])
+        ]])
+      ];
+      settings-version = 2;
+      sigma = 20;
+    };
+
+    "org/gnome/shell/extensions/blur-my-shell/appfolder" = {
+      brightness = mkDouble "0.16";
       sigma = 20;
     };
 
     "org/gnome/shell/extensions/blur-my-shell/applications" = {
       blur = true;
-      brightness = 1.0;
+      brightness = mkDouble "1.0";
       dynamic-opacity = false;
       enable-all = false;
       opacity = 230;
+      sigma = 30;
       whitelist = [ "foot" ];
     };
 
     "org/gnome/shell/extensions/blur-my-shell/dash-to-dock" = {
       blur = false;
+      brightness = mkDouble "0.16";
       override-background = true;
+      pipeline = "pipeline_default_rounded";
+      sigma = 20;
+      static-blur = true;
       style-dash-to-dock = 2;
     };
 
     "org/gnome/shell/extensions/blur-my-shell/lockscreen" = {
       blur = false;
+      pipeline = "pipeline_default";
     };
 
     "org/gnome/shell/extensions/blur-my-shell/overview" = {
+      pipeline = "pipeline_default";
       style-components = 2;
     };
 
     "org/gnome/shell/extensions/blur-my-shell/panel" = {
       blur = true;
-      brightness = 0.25;
+      brightness = mkDouble "0.25";
       customize = false;
+      force-light-text = false;
+      override-background = true;
       override-background-dynamically = false;
+      pipeline = "pipeline_default";
       sigma = 20;
+      static-blur = true;
+    };
+
+    "org/gnome/shell/extensions/blur-my-shell/screenshot" = {
+      pipeline = "pipeline_default";
+    };
+
+    "org/gnome/shell/extensions/blur-my-shell/window-list" = {
+      brightness = mkDouble "0.16";
+      sigma = 80;
     };
 
    "org/gnome/shell/extensions/just-perfection" = {
