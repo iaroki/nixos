@@ -6,7 +6,7 @@
     gnome.dconf-editor gnome.nautilus gnome.gnome-tweaks gnome.pomodoro
     gnomeExtensions.appindicator gnomeExtensions.clipboard-indicator
     gnomeExtensions.blur-my-shell gnomeExtensions.just-perfection
-    gnomeExtensions.pop-shell alacritty xorg.xprop onagre
+    gnomeExtensions.tactile alacritty xorg.xprop onagre
   ];
 
   environment.gnome.excludePackages = (with pkgs; [
