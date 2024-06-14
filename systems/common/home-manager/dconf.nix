@@ -229,7 +229,7 @@ with lib.hm.gvariant;
       enable-all = false;
       opacity = 230;
       sigma = 30;
-      whitelist = [ "foot" ];
+      whitelist = [ "foot" "org.wezfurlong.wezterm" ];
     };
 
     "org/gnome/shell/extensions/blur-my-shell/dash-to-dock" = {
