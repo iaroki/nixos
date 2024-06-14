@@ -298,7 +298,7 @@ with lib.hm.gvariant;
     "org/gnome/shell/extensions/tactile" = {
       col-2 = 0;
       col-3 = 0;
-      gap-size = 30;
+      gap-size = 0;
       layout-2-col-2 = 0;
       layout-2-col-3 = 0;
       layout-2-row-2 = 0;
