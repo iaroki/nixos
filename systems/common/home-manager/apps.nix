@@ -30,6 +30,7 @@
     moonlight-qt
     newsboat
     distrobox
+    wezterm
   ];
 
   programs.fzf = {
