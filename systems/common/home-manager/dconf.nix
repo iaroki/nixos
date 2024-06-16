@@ -156,7 +156,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Shift><Alt>Return";
-      command = "foot";
+      command = "wezterm";
       name = "terminal";
     };
 
@@ -175,12 +175,12 @@ with lib.hm.gvariant;
         "pomodoro@arun.codito.in"
         "blur-my-shell@aunetx"
         "just-perfection-desktop@just-perfection"
+        "pop-shell@system76.com"
         "tactile@lundal.io"
       ];
     };
 
     "org/gnome/shell/extensions/blur-my-shell" = {
-      brightness = mkDouble "0.16";
       hacks-level = 2;
       pipelines = [
         (mkDictionaryEntry ["pipeline_default" [
@@ -190,8 +190,8 @@ with lib.hm.gvariant;
             (mkDictionaryEntry ["id" (mkVariant "effect_000000000000")])
             (mkDictionaryEntry ["params" (mkVariant [
               (mkDictionaryEntry ["radius" (mkVariant 30)])
-              (mkDictionaryEntry ["brightness" (mkVariant (mkDouble "0.16"))])
-              (mkDictionaryEntry ["unscaled_radius" (mkVariant 80)])
+              (mkDictionaryEntry ["brightness" (mkVariant 1)])
+              (mkDictionaryEntry ["unscaled_radius" (mkVariant 30)])
             ])])
           ]) ])])
         ]])
@@ -214,7 +214,6 @@ with lib.hm.gvariant;
         ]])
       ];
       settings-version = 2;
-      sigma = 20;
     };
 
     "org/gnome/shell/extensions/blur-my-shell/appfolder" = {
@@ -226,9 +225,8 @@ with lib.hm.gvariant;
       blur = true;
       brightness = mkDouble "1.0";
       dynamic-opacity = false;
-      enable-all = false;
-      opacity = 230;
-      sigma = 30;
+      opacity = 255;
+      sigma = 20;
       whitelist = [ "foot" "org.wezfurlong.wezterm" ];
     };
 
@@ -253,15 +251,10 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/blur-my-shell/panel" = {
-      blur = true;
       brightness = mkDouble "0.25";
-      customize = false;
-      force-light-text = false;
-      override-background = true;
-      override-background-dynamically = false;
       pipeline = "pipeline_default";
       sigma = 20;
-      static-blur = true;
+      static-blur = false;
     };
 
     "org/gnome/shell/extensions/blur-my-shell/screenshot" = {
