@@ -23,11 +23,11 @@
     python311Packages.pip
     nodejs
     nodePackages.npm
-    nodePackages.pyright
     nodePackages.bash-language-server
     nodePackages.dockerfile-language-server-nodejs
     nodePackages.vscode-langservers-extracted
     nodePackages.yaml-language-server
+    pyright
     sumneko-lua-language-server
     cmake-language-server
     cmake
