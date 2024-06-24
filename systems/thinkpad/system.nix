@@ -53,13 +53,29 @@
     isNormalUser = true;
     description = "msytnyk";
     shell = pkgs.zsh;
-    extraGroups = [ "input" "video" "networkmanager" "docker" "wheel" "vboxusers" ];
+    extraGroups = [ "input" "video" "networkmanager" "docker" "wheel" "vboxusers" "libvirtd" ];
   };
 
   security.sudo.wheelNeedsPassword = false;
 
   virtualisation.docker.enable = true;
   virtualisation.virtualbox.host.enable = true;
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      ovmf = {
+        enable = true;
+        packages = [(pkgs.OVMF.override {
+          secureBoot = true;
+          tpmSupport = true;
+        }).fd];
+      };
+    };
+  };
+  programs.virt-manager.enable = true;
 
   services.acpid.enable = true;
   hardware.acpilight.enable = true;
