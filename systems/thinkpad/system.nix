@@ -36,6 +36,7 @@
   fonts.packages = [
     pkgs.source-serif
     pkgs.source-sans
+    pkgs.vollkorn
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
 
