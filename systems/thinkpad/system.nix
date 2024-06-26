@@ -4,7 +4,8 @@
 
   environment.systemPackages = with pkgs; [
     vim wget tmux git htop tree unzip home-manager
-    pavucontrol acpi libnotify thinkfan virtiofsd
+    pavucontrol acpi libnotify thinkfan
+    virtiofsd virt-viewer
   ];
 
   services.keyd = {
