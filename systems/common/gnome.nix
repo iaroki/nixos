@@ -3,18 +3,18 @@
 {
   environment.systemPackages = with pkgs; [
     pciutils usbutils psmisc keyd foot pass-wayland dconf2nix
-    gnome.dconf-editor gnome.nautilus gnome.gnome-tweaks gnome.pomodoro
+    dconf-editor nautilus gnome-tweaks gnome-pomodoro
     gnomeExtensions.appindicator gnomeExtensions.clipboard-indicator
     gnomeExtensions.blur-my-shell gnomeExtensions.just-perfection
     gnomeExtensions.tactile alacritty xorg.xprop onagre
   ];
 
   environment.gnome.excludePackages = (with pkgs; [
-    gnome-photos gnome-tour gedit
+    gnome-photos gnome-tour gedit cheese gnome-terminal epiphany
+    geary evince totem yelp
   ]) ++ (with pkgs.gnome; [
-    cheese gnome-music gnome-terminal
-    epiphany geary evince gnome-characters
-    totem tali iagno hitori atomix yelp
+    gnome-music gnome-characters
+    tali iagno hitori atomix
     gnome-contacts gnome-initial-setup
   ]);
 
