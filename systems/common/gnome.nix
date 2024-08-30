@@ -11,11 +11,8 @@
 
   environment.gnome.excludePackages = (with pkgs; [
     gnome-photos gnome-tour gedit cheese gnome-terminal epiphany
-    geary evince totem yelp
-  ]) ++ (with pkgs.gnome; [
-    gnome-music gnome-characters
-    tali iagno hitori atomix
-    gnome-contacts gnome-initial-setup
+    geary evince totem yelp gnome-music gnome-characters
+    tali iagno hitori atomix gnome-contacts gnome-initial-setup
   ]);
 
   programs.dconf.enable = true;

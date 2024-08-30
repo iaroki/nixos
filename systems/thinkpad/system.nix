@@ -47,7 +47,10 @@
   time.timeZone = "Europe/Kiev";
 
   environment.homeBinInPath = true;
-  programs.vim.defaultEditor = true;
+  programs.vim = {
+    enable = true;
+    defaultEditor = true
+  };
   programs.zsh.enable = true;
 
   users.users.msytnyk = {
