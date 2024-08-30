@@ -11,5 +11,6 @@
     cloudflare-warp
     dbeaver-bin
     slack
+    google-chrome
   ];
 }
