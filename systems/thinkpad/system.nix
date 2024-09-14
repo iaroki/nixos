@@ -49,7 +49,7 @@
   environment.homeBinInPath = true;
   programs.vim = {
     enable = true;
-    defaultEditor = true
+    defaultEditor = true;
   };
   programs.zsh.enable = true;
 
@@ -62,7 +62,18 @@
 
   security.sudo.wheelNeedsPassword = false;
 
-  virtualisation.docker.enable = true;
+  virtualisation.docker = {
+    enable = true;
+    daemon.settings = {
+      bip = "10.250.0.1/24";
+      default-address-pools = [
+        {
+          base = "10.251.0.0/16";
+          size = 24;
+        }
+      ];
+    };
+  };
   virtualisation.virtualbox.host.enable = true;
   virtualisation.libvirtd = {
     enable = true;
