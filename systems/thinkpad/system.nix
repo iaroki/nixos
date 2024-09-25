@@ -57,7 +57,7 @@
     isNormalUser = true;
     description = "msytnyk";
     shell = pkgs.zsh;
-    extraGroups = [ "input" "video" "networkmanager" "docker" "wheel" "vboxusers" "libvirtd" ];
+    extraGroups = [ "input" "video" "networkmanager" "docker" "wheel" "libvirtd" ];
   };
 
   security.sudo.wheelNeedsPassword = false;
@@ -74,7 +74,6 @@
       ];
     };
   };
-  virtualisation.virtualbox.host.enable = true;
   virtualisation.libvirtd = {
     enable = true;
     qemu = {
