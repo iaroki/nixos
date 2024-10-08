@@ -8,6 +8,7 @@
     };
     nur.url = "github:nix-community/NUR";
     note-sync.url = "github:iaroki/note-sync";
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
   outputs = { self, nixpkgs, home-manager, nur, note-sync, ... }@attrs:
