@@ -2,32 +2,34 @@
 
 {
 
-  home.username = "msytnyk";
-  home.homeDirectory = "/home/msytnyk";
+  home.username = "m.sytnyk";
+  home.homeDirectory = "/Users/m.sytnyk";
 
   programs.home-manager.enable = true;
 
   imports = [
     ../common/home-manager/apps.nix
     ../common/home-manager/dev.nix
-    ../common/home-manager/firefox.nix
     ../common/home-manager/git.nix
-    ../common/home-manager/gpg.nix
-    ../common/home-manager/note-sync.nix
-    ../common/home-manager/session.nix
     ../common/home-manager/tmux.nix
-    ../common/home-manager/zathura.nix
     ../common/home-manager/zsh.nix
-    ../common/home-manager/dconf.nix
-    ../common/home-manager/linux.nix
-    ../common/home-manager/experimental.nix
     ./work.nix
   ];
 
   home.shellAliases = {
     b = "bat --style=header,grid --paging=never --theme=catppuccin";
-    home-switch = "home-manager switch --flake '.#thinkpad'";
-    nixos-switch = "sudo nixos-rebuild switch --flake '.#thinkpad'";
+    nix-switch = "darwin-rebuild switch --flake '.#nixbook'";
+  };
+
+  home.sessionVariables = {
+    PATH = "/Users/$USER/bin:$PATH";
+    LANG = "en_US.UTF-8";
+    LC_CTYPE = "en_US.UTF-8";
+    LC_ALL = "en_US.UTF-8";
+    EDITOR = "nvim";
+    PAGER = "less -FirSwX";
+    MANPAGER = "less -FirSwX";
+    PASSWORD_STORE_GPG_OPTS = "--armor";
   };
 
   nixpkgs.config.allowUnfree = true;

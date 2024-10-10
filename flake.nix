@@ -6,17 +6,35 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-darwin = {
+      url = "github:LnL7/nix-darwin";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nur.url = "github:nix-community/NUR";
     note-sync.url = "github:iaroki/note-sync";
     zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, nur, note-sync, ... }@attrs:
+  outputs = { self, nixpkgs, home-manager, nix-darwin, nur, note-sync, ... }@attrs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
+      darwinConfigurations."nixbook" = nix-darwin.lib.darwinSystem {
+        system = "aarch64-darwin";
+        specialArgs.inputs = attrs;
+        modules = [
+          ./systems/macbook/configuration.nix
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs.inputs = attrs;
+            home-manager.users."m.sytnyk" = import ./systems/macbook/home.nix;
+          }
+        ];
+      };
       nixosConfigurations.macmini = nixpkgs.lib.nixosSystem {
         system = "${system}";
         specialArgs.inputs = attrs;

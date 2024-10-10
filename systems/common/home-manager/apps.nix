@@ -4,7 +4,6 @@
   home.packages = with pkgs; [
     git
     lazygit
-    lazydocker
     neovim
     mpv
     eza
@@ -23,13 +22,9 @@
     gcc
     gnumake
     vifm
-    w3m
     obsidian
-    transmission_4-gtk
     cbonsai
-    moonlight-qt
     newsboat
-    distrobox
     wezterm
   ];
 

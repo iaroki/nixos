@@ -2,8 +2,8 @@
 
 {
   home.packages = with pkgs; [
-    remmina
-    vagrant
+#    remmina
+#    vagrant
     packer
     terraform
     terraform-docs
