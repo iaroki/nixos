@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
    remmina
-   vagrant
+   # vagrant # broken 17-10-2024
    transmission_4-gtk
    moonlight-qt
    distrobox
