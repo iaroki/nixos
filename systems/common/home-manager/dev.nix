@@ -16,6 +16,7 @@
     ansible-language-server
     sshpass
     awscli2
+    k9s
     kubectl
     kubectx
     kubernetes-helm
