@@ -6,5 +6,6 @@
     google-cloud-sdk
     rclone
     dbeaver-bin
+    ollama
   ];
 }
