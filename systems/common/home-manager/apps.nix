@@ -22,7 +22,7 @@
     gcc
     gnumake
     vifm
-    yazi
+    # yazi  # broken as of 04-11-2024
     obsidian
     cbonsai
     newsboat
