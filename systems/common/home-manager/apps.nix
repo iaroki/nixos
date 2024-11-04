@@ -22,6 +22,7 @@
     gcc
     gnumake
     vifm
+    yazi
     obsidian
     cbonsai
     newsboat
