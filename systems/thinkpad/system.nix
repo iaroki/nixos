@@ -37,8 +37,9 @@
   fonts.packages = [
     pkgs.source-serif
     pkgs.source-sans
+    pkgs.fira-sans
     pkgs.vollkorn
-    (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
+    pkgs.nerd-fonts.fira-code
   ];
 
   networking.hostName = "nixpad";
