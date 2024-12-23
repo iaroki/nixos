@@ -14,6 +14,7 @@
     ansible
     ansible-lint
     ansible-language-server
+    yamllint
     sshpass
     awscli2
     k9s
