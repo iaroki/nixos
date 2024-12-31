@@ -11,9 +11,9 @@
     tflint
     terragrunt
     shellcheck
-    ansible
-    ansible-lint
-    ansible-language-server
+    # ansible  # broken as of 31.12.2024
+    # ansible-lint
+    # ansible-language-server
     yamllint
     sshpass
     awscli2
@@ -21,8 +21,8 @@
     kubectl
     kubectx
     kubernetes-helm
-    python311
-    python311Packages.pip
+    python312
+    python312Packages.pip
     nodejs
     nodePackages.npm
     nodePackages.bash-language-server

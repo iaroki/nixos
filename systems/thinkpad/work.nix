@@ -1,6 +1,6 @@
 { pkgs, ... }: let
 
-  zed-fhs = pkgs.buildFHSUserEnv {
+  zed-fhs = pkgs.buildFHSEnv {
     name = "zed";
     targetPkgs = pkgs:
       with pkgs; [
@@ -21,5 +21,6 @@ in
     slack
     google-chrome
     zed-fhs
+    ghostty
   ];
 }

@@ -10,12 +10,11 @@
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nur.url = "github:nix-community/NUR";
     note-sync.url = "github:iaroki/note-sync";
     zen-browser.url = "github:omarcresp/zen-browser-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-darwin, nur, note-sync, ... }@attrs:
+  outputs = { self, nixpkgs, home-manager, nix-darwin, note-sync, ... }@attrs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -57,7 +56,6 @@
         };
         extraSpecialArgs.inputs = attrs;
         modules = [
-          nur.nixosModules.nur
           ./systems/macmini/home.nix
         ];
       };
@@ -68,7 +66,6 @@
         };
         extraSpecialArgs.inputs = attrs;
         modules = [
-          nur.nixosModules.nur
           ./systems/thinkpad/home.nix
         ];
       };
@@ -79,7 +76,6 @@
         };
         extraSpecialArgs.inputs = attrs;
         modules = [
-          nur.nixosModules.nur
           ./systems/vmware/home.nix
         ];
       };
