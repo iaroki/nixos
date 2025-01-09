@@ -19,7 +19,7 @@
     '';
     localVariables = {
         VI_MODE_SET_CURSOR = true;
-        STARSHIP_CONFIG = $HOME/.config/starship/starship.toml;
+        STARSHIP_CONFIG = "$HOME/.config/starship/starship.toml";
       };
     shellAliases = {
       vim = "nvim";
