@@ -1,4 +1,3 @@
-# Generated via dconf2nix: https://github.com/gvolpe/dconf2nix
 { lib, ... }:
 
 with lib.hm.gvariant;
@@ -40,13 +39,13 @@ with lib.hm.gvariant;
       per-window = true;
       show-all-sources = true;
       sources = [ (mkTuple [ "xkb" "us" ]) (mkTuple [ "xkb" "ru" ]) (mkTuple [ "xkb" "ua+winkeys" ]) ];
-      xkb-options = [ "terminate:ctrl_alt_bksp" "grp:caps_toggle" ];
+      # xkb-options = [ "terminate:ctrl_alt_bksp" "grp:caps_toggle" ];
     };
 
     "org/gnome/desktop/interface" = {
       clock-show-weekday = true;
       color-scheme = "prefer-dark";
-      cursor-size = 14;
+      cursor-size = 24;
       enable-animations = false;
       enable-hot-corners = false;
       font-antialiasing = "grayscale";
@@ -156,7 +155,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Shift><Alt>Return";
-      command = "wezterm";
+      command = "ghostty";
       name = "terminal";
     };
 
@@ -227,7 +226,7 @@ with lib.hm.gvariant;
       dynamic-opacity = false;
       opacity = 255;
       sigma = 20;
-      whitelist = [ "foot" "org.wezfurlong.wezterm" ];
+      whitelist = [ "foot" "org.wezfurlong.wezterm" "com.mitchellh.ghostty" ];
     };
 
     "org/gnome/shell/extensions/blur-my-shell/dash-to-dock" = {
