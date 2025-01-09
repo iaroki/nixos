@@ -26,6 +26,7 @@
 
   home.shellAliases = {
     b = "bat --style=header,grid --paging=never --theme=catppuccin";
+    vf = "vifm ."
     home-switch = "home-manager switch --flake '.#thinkpad'";
     nixos-switch = "sudo nixos-rebuild switch --flake '.#thinkpad'";
   };
