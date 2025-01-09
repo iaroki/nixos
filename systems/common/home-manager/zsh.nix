@@ -44,9 +44,10 @@
       plugins = [ "aws" "kubectl" "kubectx" "vi-mode" ];
       theme = "robbyrussell";
     };
-    starship = {
-      enable = true;
-      enableZshIntegration = true;
-    };
+  };
+
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
   };
 }
