@@ -19,6 +19,7 @@
     '';
     localVariables = {
         VI_MODE_SET_CURSOR = true;
+        STARSHIP_CONFIG = $HOME/.config/starship/starship.toml;
       };
     shellAliases = {
       vim = "nvim";
@@ -39,9 +40,13 @@
       gwr = "git worktree remove";
     };
     oh-my-zsh = {
-      enable = true;
+      enable = false;
       plugins = [ "aws" "kubectl" "kubectx" "vi-mode" ];
       theme = "robbyrussell";
+    };
+    starship = {
+      enable = true;
+      enableZshIntegration = true;
     };
   };
 }
