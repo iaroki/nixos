@@ -11,7 +11,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     note-sync.url = "github:iaroki/note-sync";
-    zen-browser.url = "github:omarcresp/zen-browser-flake";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
   outputs = { self, nixpkgs, home-manager, nix-darwin, note-sync, ... }@attrs:
