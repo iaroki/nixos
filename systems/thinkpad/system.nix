@@ -6,6 +6,7 @@
     vim wget tmux git htop tree unzip home-manager
     pavucontrol acpi libnotify thinkfan
     virtiofsd virt-viewer
+    yubioath-flutter yubikey-manager pam_2uf
   ];
 
   services.keyd = {
@@ -62,6 +63,13 @@
   };
 
   security.sudo.wheelNeedsPassword = false;
+  security.pam.services = {
+    login.u2fAuth = false;
+    sudo.u2fAuth = false;
+  };
+  services.pcscd.enable = true;
+  services.udev.packages = [ pkgs.yubikey-personalization ];
+  services.yubikey-agent.enable = true;
 
   virtualisation.docker = {
     enable = true;
