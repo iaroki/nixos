@@ -6,7 +6,7 @@
     vim wget tmux git htop tree unzip home-manager
     pavucontrol acpi libnotify thinkfan
     virtiofsd virt-viewer
-    yubioath-flutter yubikey-manager pam_2uf
+    yubioath-flutter yubikey-manager pam_u2f
   ];
 
   services.keyd = {
