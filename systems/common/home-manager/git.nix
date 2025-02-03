@@ -5,9 +5,9 @@
     enable = true;
     lfs.enable = true;
     userName = "Maxim Sytnyk";
-    userEmail = "iaroki@protonmail.com";
+    userEmail = "iaroki@proton.me";
     signing = {
-      key = "F3456398396F1A5E";
+      key = "5C29C98968FD67AF";  # yubikey Sign key
       signByDefault = false;
     };
     aliases = {
