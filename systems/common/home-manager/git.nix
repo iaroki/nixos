@@ -8,7 +8,7 @@
     userEmail = "iaroki@proton.me";
     signing = {
       key = "5C29C98968FD67AF";  # yubikey Sign key
-      signByDefault = false;
+      signByDefault = true;
     };
     aliases = {
       prettylog = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(r) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative";
