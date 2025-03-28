@@ -22,5 +22,6 @@ in
     google-chrome
     zed-fhs
     ghostty
+    emacs
   ];
 }
