@@ -21,6 +21,7 @@
     ../common/home-manager/dconf.nix
     ../common/home-manager/linux.nix
     ../common/home-manager/experimental.nix
+    ../common/home-manager/emacs.nix
     ./work.nix
   ];
 
