@@ -40,11 +40,9 @@
     pkgs.source-sans-pro
     pkgs.fira-sans
     pkgs.vollkorn
-    pkgs.ibm-plex
+    pkgs.aporetic
     pkgs.nerd-fonts.fira-code
-    pkgs.nerd-fonts.sauce-code-pro
     pkgs.nerd-fonts.iosevka
-    pkgs.nerd-fonts.blex-mono
   ];
 
   networking.hostName = "nixpad";
