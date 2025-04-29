@@ -19,7 +19,8 @@
       core.askPass = "";
       credential.helper = "store";
       github.user = "iaroki";
-      push.default = "tracking";
+      push.default = "upstream";
+      push.autoSetupRemote = true;
       init.defaultBranch = "main";
     };
   };
