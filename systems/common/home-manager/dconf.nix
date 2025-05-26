@@ -44,13 +44,13 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       clock-show-weekday = true;
-      color-scheme = "prefer-dark";
+      # color-scheme = "prefer-dark";
       cursor-size = 24;
       enable-animations = false;
       enable-hot-corners = false;
       font-antialiasing = "grayscale";
       font-hinting = "slight";
-      gtk-theme = "Adwaita-dark";
+      # gtk-theme = "Adwaita-dark";
       icon-theme = "Adwaita";
       locate-pointer = false;
       monospace-font-name = "FiraCode Nerd Font 10";
@@ -226,7 +226,7 @@ with lib.hm.gvariant;
       dynamic-opacity = false;
       opacity = 255;
       sigma = 20;
-      whitelist = [ "foot" "org.wezfurlong.wezterm" "com.mitchellh.ghostty" ];
+      whitelist = [ "com.mitchellh.ghostty" ];
     };
 
     "org/gnome/shell/extensions/blur-my-shell/dash-to-dock" = {

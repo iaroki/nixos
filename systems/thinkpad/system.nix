@@ -32,7 +32,7 @@
 
   environment.sessionVariables = {
     # NIXOS_OZONE_WL = "1";
-    GTK_THEME="Adwaita:dark";
+    # GTK_THEME="Adwaita:dark";
   };
 
   fonts.packages = [

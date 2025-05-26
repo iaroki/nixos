@@ -26,7 +26,7 @@
   ];
 
   home.shellAliases = {
-    b = "bat --style=header,grid --paging=never --theme=catppuccin";
+    b = "bat --style=header,grid --paging=never";
     vf = "vifm .";
     aws_profile = "export AWS_PROFILE=\$(aws configure list-profiles | fzf --prompt \"Choose active AWS profile:\")";
     home-switch = "home-manager switch --flake '.#thinkpad'";

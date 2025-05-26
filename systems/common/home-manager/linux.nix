@@ -5,7 +5,6 @@
    remmina
    # vagrant # broken 17-10-2024
    transmission_4-gtk
-   moonlight-qt
    distrobox
   ];
 }

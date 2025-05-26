@@ -2,8 +2,6 @@
 
 {
   home.packages = with pkgs; [
-#    remmina
-#    vagrant
     packer
     terraform
     terraform-docs
@@ -12,8 +10,8 @@
     terragrunt
     shellcheck
     # ansible  # broken as of 31.12.2024
-    # ansible-lint
-    # ansible-language-server
+    ansible-lint
+    ansible-language-server
     yamllint
     sshpass
     awscli2
