@@ -146,10 +146,11 @@
   #   };
   # };
 
-  services.power-profiles-daemon.enable = false;
+  # Managed by GNOME 48
+  services.power-profiles-daemon.enable = true;
   services = {
     tlp = {
-      enable = true;
+      enable = false;
       settings = {
         TLP_ENABLE = 1;
         START_CHARGE_THRESH_BAT0 = 70;
@@ -157,7 +158,7 @@
       };
     };
   };
-  nixpkgs.config.allowUnfree = true;
 
+  nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
