@@ -13,7 +13,7 @@
     enableCompletion = true;
     syntaxHighlighting.enable = true;
     defaultKeymap = "viins";
-    initExtra = ''
+    initContent = ''
       bindkey jk vi-cmd-mode
       zstyle ':completion::complete:make:*:targets' call-command true
     '';
