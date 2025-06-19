@@ -7,6 +7,7 @@
     gnomeExtensions.appindicator gnomeExtensions.clipboard-indicator
     gnomeExtensions.blur-my-shell gnomeExtensions.just-perfection
     gnomeExtensions.tactile alacritty xorg.xprop onagre
+    gnome.gvfs mtpfs android-file-transfer
   ];
 
   environment.gnome.excludePackages = (with pkgs; [
@@ -14,6 +15,11 @@
     geary evince totem yelp gnome-music gnome-characters
     tali iagno hitori atomix gnome-contacts gnome-initial-setup
   ]);
+
+  # USB mount workaround for GNOME 48
+  services.devmon.enable = true;
+  services.gvfs.enable = true;
+  services.udisks2.enable = true;
 
   programs.dconf.enable = true;
   services.udev.packages = with pkgs; [ gnome-settings-daemon ];
