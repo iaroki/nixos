@@ -25,6 +25,7 @@
     obsidian
     cbonsai
     newsboat
+    tauon
   ];
 
   programs.fzf = {
