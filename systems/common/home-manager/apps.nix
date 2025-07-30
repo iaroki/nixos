@@ -15,7 +15,6 @@
     yq
     tree
     btop
-    mosh
     just
     go
     gopls
