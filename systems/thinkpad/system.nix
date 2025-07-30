@@ -7,6 +7,8 @@
     pavucontrol acpi libnotify thinkfan
     virtiofsd virt-viewer
     yubioath-flutter yubikey-manager pam_u2f
+    networkmanager networkmanagerapplet
+    networkmanager-openvpn openvpn3
   ];
 
   services.keyd = {
@@ -47,6 +49,13 @@
 
   networking.hostName = "nixpad";
   networking.networkmanager.enable = true;
+  networking.networkmanager.plugins = with pkgs; [
+    networkmanager-openconnect
+    networkmanager-openvpn
+    networkmanager-sstp
+    networkmanager-strongswan
+    networkmanager-vpnc
+  ];
 
   time.timeZone = "Europe/Kiev";
 
