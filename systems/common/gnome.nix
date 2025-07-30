@@ -8,6 +8,7 @@
     gnomeExtensions.blur-my-shell gnomeExtensions.just-perfection
     gnomeExtensions.tactile alacritty xorg.xprop onagre
     gnome.gvfs mtpfs android-file-transfer
+    amberol
   ];
 
   environment.gnome.excludePackages = (with pkgs; [

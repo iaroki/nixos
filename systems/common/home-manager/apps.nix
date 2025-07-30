@@ -25,7 +25,6 @@
     obsidian
     cbonsai
     newsboat
-    amberol
   ];
 
   programs.fzf = {
