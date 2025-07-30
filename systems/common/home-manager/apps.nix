@@ -25,7 +25,7 @@
     obsidian
     cbonsai
     newsboat
-    tauon
+    amberol
   ];
 
   programs.fzf = {
