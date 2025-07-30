@@ -21,7 +21,7 @@
     kubernetes-helm
     python312
     python312Packages.pip
-    nodejs
+    # nodejs
     nodePackages.npm
     nodePackages.bash-language-server
     nodePackages.dockerfile-language-server-nodejs
