@@ -26,7 +26,6 @@
     cbonsai
     newsboat
     amberol
-    input-leap
   ];
 
   programs.fzf = {
