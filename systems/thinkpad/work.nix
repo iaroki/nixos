@@ -11,5 +11,6 @@
     google-chrome
     zed-editor-fhs
     ghostty
+    input-leap
   ];
 }
