@@ -1,15 +1,4 @@
-{ pkgs, ... }: let
-
-  zed-fhs = pkgs.buildFHSEnv {
-    name = "zed";
-    targetPkgs = pkgs:
-      with pkgs; [
-        zed-editor
-      ];
-    runScript = "zed";
-  };
-
-in
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -20,7 +9,7 @@ in
     dbeaver-bin
     slack
     google-chrome
-    zed-fhs
+    zed-editor-fhs
     ghostty
   ];
 }
