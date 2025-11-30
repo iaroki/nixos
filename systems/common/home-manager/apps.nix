@@ -24,9 +24,6 @@
     obsidian
     cbonsai
     newsboat
-    pass
-    passExtensions.pass-otp
-    wl-clipboard
     zbar
   ];
 
@@ -52,5 +49,10 @@
     #   prompt = "#cba6f7";
     #   border = "#cdd6f4";
     # };
+  };
+
+  programs.password-store = {
+      enable = true;
+      package = pkgs.pass-wayland.withExtensions (exts: [ exts.pass-otp ]);
   };
 }
