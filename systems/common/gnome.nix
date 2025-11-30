@@ -2,8 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
-    pciutils usbutils psmisc keyd foot pass-wayland dconf2nix
-    dconf-editor nautilus gnome-tweaks gnome-pomodoro
+    pciutils usbutils psmisc keyd foot
+    dconf2nix dconf-editor nautilus gnome-tweaks gnome-pomodoro
     gnomeExtensions.appindicator gnomeExtensions.clipboard-indicator
     gnomeExtensions.blur-my-shell gnomeExtensions.just-perfection
     gnomeExtensions.tactile alacritty xorg.xprop onagre

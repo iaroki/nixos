@@ -24,6 +24,10 @@
     obsidian
     cbonsai
     newsboat
+    pass
+    passExtensions.pass-otp
+    wl-clipboard
+    zbar
   ];
 
   programs.fzf = {
