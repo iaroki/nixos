@@ -12,5 +12,6 @@
     zed-editor-fhs
     ghostty
     input-leap
+    pritunl-client
   ];
 }
