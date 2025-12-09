@@ -15,6 +15,7 @@
     yamllint
     sshpass
     awscli2
+    ssm-session-manager-plugin
     k9s
     kubectl
     kubectx
