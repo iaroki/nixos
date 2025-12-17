@@ -11,7 +11,7 @@
     shellcheck
     # ansible  # broken as of 31.12.2024
     ansible-lint
-    ansible-language-server
+    # ansible-language-server  # unmaintained, removed from nixpkgs
     yamllint
     sshpass
     awscli2
@@ -25,11 +25,11 @@
     # nodejs
     nodePackages.npm
     nodePackages.bash-language-server
-    nodePackages.dockerfile-language-server-nodejs
     nodePackages.vscode-langservers-extracted
     nodePackages.yaml-language-server
+    dockerfile-language-server
     pyright
-    sumneko-lua-language-server
+    lua-language-server
     cmake-language-server
     cmake
     sops
